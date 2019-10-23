@@ -4,7 +4,7 @@ At the end of story 1 you had scaffolded out a development environment, download
 
 ## Step 1 - Compile and deploy the token
 
-- To build a project, `right click` on any solidity (.sol) file in your solution and select "Build Contracts" from the drop down
+- To build a project, `right click` on any Solidity (.sol) file in your solution and select "Build Contracts" from the drop down
 
   ![](../images/builldToken.png)
 
@@ -16,7 +16,7 @@ At the end of story 1 you had scaffolded out a development environment, download
 
 - After selecting "Deploy Contracts" select `development 127.0.0.1:8545` from the selection options
 
-  ![](C:\ignite\ignite2019\images\deployLocal.png)
+  ![](../images/deployLocal.png)
 
 - This starts the process of deploying a contract a local (emulated) ledger
 
@@ -43,4 +43,3 @@ Now that you have deployed a contract locally, you can auto-generate UI through 
 
 
 ### [You may now  move on to Step 3 - Deploy to Azure Blockchain Service and create microservices for your smart contract](../story3/story3.md)
-
