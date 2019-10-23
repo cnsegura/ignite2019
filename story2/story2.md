@@ -42,4 +42,5 @@ Now that you have deployed a contract locally, you can auto-generate UI through 
 
 
 
-### [You may now  move on to Step 3 - Deploy and Interact with your contract locally](../story3/story3.md)
+### [You may now  move on to Step 3 - Deploy to Azure Blockchain Service and create microservices for your smart contract](../story3/story3.md)
+
