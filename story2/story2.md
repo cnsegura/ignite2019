@@ -25,3 +25,22 @@ At the end of story 1 you had scaffolded out a development environment, download
   `Note: your values will be different than shown below`
 
   ![](../images/localDeploymentComplete.png)
+
+## Step 3 - Interact with your contract 
+
+Now that you have deployed a contract locally, you can auto-generate UI through the VS Code extension which gives developers an easy way to test out their contract functionality. To generate this UI:
+
+- `Right click` on any of the Solidity (.sol) files in your project and select "Show Contract Interaction Page"
+
+  ![](../images/showUIPage.png)
+
+- Once the Contract UI page loads you may test out various parts of your contract - TODO
+
+`This completes user story 2: Deploy and Interact with your contract locally`
+
+`Note: if you cannot finish this section on your own, a completed section is available under c:\ignite\story2`
+
+
+
+### [You may now  move on to Step 2 - Deploy and Interact with your contract locally](../story3/story3.md)
+
