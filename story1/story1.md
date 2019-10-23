@@ -1,6 +1,6 @@
 # Story 1: Download an ERC-20 token
 
-## Step 1
+## Step 1 - Create a workspace
 
 - Once logged into your VM create an empty directory on the machine and start VS Code
 
@@ -21,6 +21,8 @@
 
   ![](../images/launchVSCode.png)
 
+  ## Step 2 - Connect Azure to your VS Code environment
+
 - Once VS Code launches, you need to log into Azure by selecting the Azure charm as shown below
 
   ![](../images/azureCharm.png)
@@ -33,6 +35,8 @@
 - Once logged in, return to the explorer view by selecting the explorer charm
 
   ![](../images/explorerCharm.png)
+
+  ## Step 3 - Download an OSS ERC20 token
 
 - You are now ready to scaffold out a basic solidity project. From VS Code menu select, `view, command palette` and in the drop down type `azure blockchain:` and select `New Solidity Project` 
 
@@ -62,14 +66,10 @@
 
 - To integrate the OpenZeppelin ERC20 token into your smart contract DO THE FOLLOWING --- TBD
 
-- ONCE INTEGRATION IS COMPLETE THEN `right click` on your smart contract and choose "Build Contracts" from the context menu
 
-  ![](../images/builldToken.png)
 
-- This will compile all the contracts in your directory. Next we will deploy these contracts to a local Ethereum ledger (already installed in your VM)
+`This completes user story 1: Downloading and integrating an OSS ERC20 token`
 
-- Right click the TO DO file from above, and click the "Deploy Contracts" option from the context menu. 
 
-- Select `development 127.0.0.1:8545` from the dropdown. This will deploy the contract, you may view the success/fail status in the VS Code output window
 
-  ![](../images/deployLocal.png)
+`Note: if you cannot finish this section on your own, a completed section is available under c:\ignite\story1`
