@@ -66,10 +66,10 @@
 
 - To integrate the OpenZeppelin ERC20 token into your smart contract DO THE FOLLOWING --- TBD
 
-
-
 `This completes user story 1: Downloading and integrating an OSS ERC20 token`
 
-
-
 `Note: if you cannot finish this section on your own, a completed section is available under c:\ignite\story1`
+
+
+
+### [You may now  move on to Step 2 - Deploy and Interact with your contract locally](../story2/story2.md)
