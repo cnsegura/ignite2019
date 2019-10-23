@@ -4,10 +4,20 @@
 
 - Once logged into your VM create an empty directory on the machine and start VS Code
 
-  - From a command prompt:
-    - mkdir c:\ignitelab
-    - cd c:\ignitelab
-    - code .
+  - From a command prompt type:
+    ```
+    mkdir c:\ignitelab
+    ```
+    
+    ```
+    cd c:\ignitelab
+    ```
+    
+    ```
+    code .
+    ```
+    
+    
 
   ![](../images/launchVSCode.png)
 
@@ -26,7 +36,7 @@
 
 - You are now ready to scaffold out a basic solidity project. From VS Code menu select, `view, command palette` and in the drop down type `azure blockchain:` and select `New Solidity Project` 
 
-- Choose basic project from the drop down and then select your c:\ignitelab as the project directory. This will download and create a new project for you. Note: this will take a few minutes (there is a spinning icon with "Creating new project" at the bottom left of the VS Code window which will disappear at the end of the process)
+- Choose basic project from the drop down and then select your `c:\ignitelab` as the project directory. This will download and create a new project for you. Note: this will take a few minutes (there is a spinning icon with "Creating new project" at the bottom left of the VS Code window which will disappear at the end of the process)
 
   ![](../images/newSolidityProject.png)
 
@@ -50,13 +60,15 @@
 
   ![](../images/ozDirectory.png)
 
-- Navigate to the downloaded token `openZeppelin, token, ERC20` then right click on the ERC20.sol file and choose "Build Contracts" from the context menu
+- To integrate the OpenZeppelin ERC20 token into your smart contract DO THE FOLLOWING --- TBD
+
+- ONCE INTEGRATION IS COMPLETE THEN `right click` on your smart contract and choose "Build Contracts" from the context menu
 
   ![](../images/builldToken.png)
 
 - This will compile all the contracts in your directory. Next we will deploy these contracts to a local Ethereum ledger (already installed in your VM)
 
-- Right click the "ERC20.sol" file from above, and click the "Deploy Contracts" option from the context menu. 
+- Right click the TO DO file from above, and click the "Deploy Contracts" option from the context menu. 
 
 - Select `development 127.0.0.1:8545` from the dropdown. This will deploy the contract, you may view the success/fail status in the VS Code output window
 
