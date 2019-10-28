@@ -36,7 +36,7 @@
 
   ![](../images/explorerCharm.png)
 
-  ## Step 3 - Download an OSS ERC20 token
+  ## Step 3 - Setup your directory 
 
 - You are now ready to scaffold out a basic solidity project. From VS Code menu select, `view, command palette` and in the drop down type `azure blockchain:` and select `New Solidity Project` 
 
@@ -48,9 +48,27 @@
 
   ![](../images/projectUnboxComplete.png)
 
+- In this lab, we will not use the HelloBlockchain.sol contract that is downloaded in the c:\ignitelab\contracts directory. Right click on the file and hit delete (or just use the delete key on your keboard)
+
+- Add a new file to the project and title it `IgniteLab.sol` by clicking on the new file icon at the top of the project explorer in VS code
+
+  `Note: make sure you are adding this file into the "contracts" directory. You can ensure this by first clicing on the contracts tab, then adding the file`
+
+  ![](../images/newFile.png)
+
+![](../images/igniteLabSol.png)
+
+- In this new file cut and paste the following code and hit save (ctrl-s)
+
+  ```
+  TODO - CODE BLOCK FOR OUR NEW CONTRACT
+  ```
+
+  ## Step 4: Download and integrate your OSS ERC20 token
+
 - Now that you have a basic project and directory structure, you need to download the ERC-20 token from OpenZeppelin
 
-- In the VS Code editor, click on the `contracts` folder, left click on the "helloblockchain.sol" file
+- In the VS Code editor, click on the `contracts` folder, left click on the "IgniteLab.sol" file
 
 - After selecting the .sol file, `right click` on the contract and you will see a context menu which will allow you to download OpenZeppelin Contracts
 

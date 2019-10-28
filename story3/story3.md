@@ -28,7 +28,14 @@ If you did not have a Azure Blockchain Service (ABS) instance already created, y
 
   ![](../images/deployToABS.png)
 
-- GENERATE MNEMONIC PART....!!!!
+- On the next drop down, select `generate mnemonic`
+
+  ![](../images/generateMnemonic.png)
+
+- After selecting the `generate mnemonic` option above, you will get a file save box - Name the file anything you wish and save the mnemonic .env file anywhere on the C:\ drive
+
 - This begins the process of deploying your contract/token to the Azure Blockchain Service you connected in step 1
+
 - Once complete, you will find similar metadata in the output window as you saw when deploying a contract locally in story 2 (i.e., contract address etc)
+
 - 
