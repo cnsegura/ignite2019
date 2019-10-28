@@ -61,7 +61,16 @@
 - In this new file cut and paste the following code and hit save (ctrl-s)
 
   ```
-  TODO - CODE BLOCK FOR OUR NEW CONTRACT
+  pragma solidity ^0.5.0;
+  
+  import "./openZeppelin/token/ERC20/ERC20.sol";
+  import "./openZeppelin/token/ERC20/ERC20Detailed.sol";
+  
+  contract IgniteLab is ERC20, ERC20Detailed {
+      constructor(uint256 initialSupply) ERC20Detailed("Ignite", "IGTE", 18) public {
+          _mint(msg.sender, initialSupply);
+      }
+  }
   ```
 
   ## Step 4: Download and integrate your OSS ERC20 token
@@ -82,7 +91,31 @@
 
   ![](../images/ozDirectory.png)
 
-- To integrate the OpenZeppelin ERC20 token into your smart contract DO THE FOLLOWING --- TBD
+- In this lab, we are only going to use a subset of functionality of the OpenZeppelin smart contracts. In this case, need to make some modifications to the `migrations` directory.
+
+- Open the migrations directory as shown below
+
+  ![](../images/openMigrations.png)
+
+- `delete` the file "99_deploy_openzeppelin.js" file
+
+- Now `edit` the file "2_deploy_contracts.js" file to match the code below
+
+```
+var HelloBlockchain = artifacts.require("IgniteLab");
+var Arg = 100;
+module.exports = deployer => {
+    deployer.deploy(HelloBlockchain, Arg);
+};
+```
+
+- This will set the total number of tokens you can mint. In this case you can mint 100, but you may change the value of Arg to any number you wish.
+
+- Save the changes to your "2_deploy_contracts.js" file. Your directory and "2_deploy_contracts.js" should look like this
+
+  ![](../images/finalOZSetup.png)
+
+
 
 `This completes user story 1: Downloading and integrating an OSS ERC20 token`
 
