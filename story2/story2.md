@@ -28,13 +28,78 @@ At the end of story 1 you had scaffolded out a development environment, download
 
 ## Step 3 - Interact with your contract 
 
-Now that you have deployed a contract locally, you can auto-generate UI through the VS Code extension which gives developers an easy way to test out their contract functionality. To generate this UI:
+In this section, we will briefly interact with our contract via a script. Developers often use scripts to test, interact, or do various actions with contracts, this is an example of how easy to interact with a scripting environment directly from the VS Code editor. 
 
-- `Right click` on any of the Solidity (.sol) files in your project and select "Show Contract Interaction Page"
+To create a simple interaction script do the following
 
-  ![](../images/showUIPage.png)
+- Click on any file at the root of your project directory (this ensures that the next step will place a file in an easy to remember location - technically you may put this file anywhere)
 
-- Once the Contract UI page loads you may test out various parts of your contract - TODO
+  ![](../images/addScriptsPt1.png)
+
+- Next add a file to the project titled `validate.js` - you add a file in the same way as the previous story. Click on the Icon shown below and enter the file name
+
+  ![](C:\ignite\ignite2019\images\newFile.png)
+
+- Next open the file (by left clicking on the file in the tree view) and add the following code to it
+
+  ```
+  const IgniteLab = artifacts.require('IgniteLab');
+  
+  module.exports = async (done) => {
+      console.log('Getting deployed version of IgniteLab Token');
+  
+      let _meta;
+      let testout = await web3.eth.getAccounts();
+      const _owner = testout[0];
+      const _recipient = testout[1];
+      let _amount = 45;
+  
+      IgniteLab.deployed().then(function(instance){
+          console.log("Getting the current balance for source account...");
+          _meta = instance;
+          return _meta.balanceOf.call(_owner);
+      }).then(function(ownerBalanceResult){
+          console.log("Initial owner balance: " + ownerBalanceResult.toNumber());
+          return _meta.balanceOf.call(_recipient);
+      }).then(function(recipientBalanceResult){
+          console.log("Initial recipient balance: " + recipientBalanceResult.toNumber());
+          console.log("Transferring " + _amount + " to recipient");
+          return _meta.transfer(_recipient, _amount);
+      }).then(function(transferTxResult){
+          return _meta.balanceOf.call(_owner);
+      }).then(function(ownerFinalBalanceResult){
+          console.log("Final owner balance: " + ownerFinalBalanceResult);
+          return _meta.balanceOf.call(_recipient);
+      }).then(function(recipientFinalBalanceResult){
+          console.log("Final recipient balance: " + recipientFinalBalanceResult.toNumber());
+      });
+  };
+  ```
+
+- your directory and file should look something like this
+
+  ![](../images/scriptAddedComplete.png)
+
+- Save this file (ctrl-s)
+
+- To execute this JavaScript file, get to the command line in VS Code by clicking on the `terminal` tab in the editor as shown below
+
+  ![](../images/openCmdLine.png)
+
+- Now place your cursor in the window next to the C:\ignitelab> prompt and type the following command
+
+  ```javascript
+  truffle exec validate.js
+  ```
+
+- This command invokes the truffle command line tool and asks it to execute the file validate.js
+
+- You should see the validate.js file execute and send output to the screen as shown below
+
+  ![](../images/validateExecResult.png)
+
+- In this story, you deployed a token contract locally, and briefly interacted with the contract through a JavaScript file you created and used `truffle exec` to test
+- Typically in the development cycle, the next step are to deploy this contract to a cloud ledger (or public if you are developing for public blockchain). In the next story, you will take this same contract and deploy it to Azure Blockchain Service, then quickly generate a set of microservices to allow repeated access to contract functions (like token transfer from above)
 
 `This completes user story 2: Deploy and Interact with your contract locally`
 
@@ -43,3 +108,4 @@ Now that you have deployed a contract locally, you can auto-generate UI through 
 
 
 ### [You may now  move on to Step 3 - Deploy to Azure Blockchain Service and create microservices for your smart contract](../story3/story3.md)
+

@@ -48,13 +48,13 @@
 
   ![](../images/projectUnboxComplete.png)
 
-- In this lab, we will not use the HelloBlockchain.sol contract that is downloaded in the c:\ignitelab\contracts directory. Right click on the file and hit delete (or just use the delete key on your keboard)
+- `In this lab, we will not use the HelloBlockchain.sol contract` that is downloaded in the c:\ignitelab\contracts directory. `Right click on the file and hit delete` (or just use the delete key on your keboard)
 
 - Add a new file to the project and title it `IgniteLab.sol` by clicking on the new file icon at the top of the project explorer in VS code
 
   `Note: make sure you are adding this file into the "contracts" directory. You can ensure this by first clicing on the contracts tab, then adding the file`
 
-  ![](../images/newFile.png)
+  ![](../images/newFileIcon.png)
 
 ![](../images/igniteLabSol.png)
 
@@ -67,7 +67,7 @@
   import "./openZeppelin/token/ERC20/ERC20Detailed.sol";
   
   contract IgniteLab is ERC20, ERC20Detailed {
-      constructor(uint256 initialSupply) ERC20Detailed("Ignite", "IGTE", 18) public {
+      constructor(uint256 initialSupply) ERC20Detailed("Ignite", "IGNTE", 18) public {
           _mint(msg.sender, initialSupply);
       }
   }
@@ -115,6 +115,7 @@ module.exports = deployer => {
 
   ![](../images/finalOZSetup.png)
 
+- At this point you have downloaded a popular OSS implementation of an ERC20 and integrated that contract into an environment that is ready to deploy.
 
 
 `This completes user story 1: Downloading and integrating an OSS ERC20 token`
@@ -124,3 +125,4 @@ module.exports = deployer => {
 
 
 ### [You may now  move on to Step 2 - Deploy and Interact with your contract locally](../story2/story2.md)
+
