@@ -29,8 +29,8 @@
 
 - In the `integration accounts` pane you can then login using the following credentials:
 
-  - Username: TBD
-  - Password: TBD
+  - Username: labuser@igndemo.onmicrosft.com
+  - Password: L@b4Ign!te!
 
 - Once logged in, return to the explorer view by selecting the explorer charm
 
@@ -120,9 +120,7 @@ module.exports = deployer => {
 
 `This completes user story 1: Downloading and integrating an OSS ERC20 token`
 
-`Note: if you cannot finish this section on your own, a completed section is available under c:\ignite\story1`
-
-
+`Note: if you cannot finish this section on your own, a completed section is available in this GitHub repo under the story1/solution directory. The node_modules dirctory created in step 3 above will need to be copied into this solution as well` 
 
 ### [You may now  move on to Step 2 - Deploy and Interact with your contract locally](../story2/story2.md)
 
