@@ -103,7 +103,7 @@ To create a simple interaction script do the following
 
 `This completes user story 2: Deploy and Interact with your contract locally`
 
-`Note: if you cannot finish this section on your own, a completed section is available under c:\ignite\story2`
+`Note: if you cannot finish this section on your own, copy the validate.js file from the GitHub repository for story 2 into your project directory`
 
 
 
