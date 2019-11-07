@@ -78,4 +78,4 @@ To generate a set of logic apps for this token use the following steps.
 
   
 
-  ### [You may now  move on to Step 4 - Create, setup and exercise the Logic App in Azure](./story4/story4.md)
+  ### [You may now  move on to Step 4 - Create, setup and exercise the Logic App in Azure](../story4/story4.md)
