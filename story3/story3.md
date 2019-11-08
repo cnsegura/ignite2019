@@ -10,15 +10,30 @@ If you did not have a Azure Blockchain Service (ABS) instance already created, y
 
   ![](../images/connectToABS.png)
 
-- After selecting, select the `Azure Blockchain Service` from the drop down
+- After selecting, choose the `Azure Blockchain Service` from the drop down
 
   ![](../images/selectABS.png)
 
-- Select the subscription and resource groups from the drop down
+- You will be prompted to sign into Azure - the prompt is on the bottom right side side of the VS Code window
+
+  ![](C:\ignite\ignite2019\images\azureSignIn.png)
+
+  You will be redirected to a webpage which will ask for Azure credentials. `You may use the credentials below to log in`
+
+  - Username: labuser@igndemo.onmicrosft.com
+  - Password: L@b4Ign!te!
+
+- Once logged in you will be presented with a subscription, select the subscription shown
+
+- Next you will be shown a resource group, select the resource group
+
+- After you will be shown a consortium (Azure Blockchain Service instance) - Select instance and the extension will automatically make the connection
 
 - Once completed, you will see an `Azure Blockchain Service` connection has been added to your resource tree (this connects the VS Code extension, to the actual ABS resource deployed in Azure)
 
   ![](../images/absInTree.png)
+
+- - 
 
 ## Step 2 - Deploy your contract/token to Azure Blockchain Service
 

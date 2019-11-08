@@ -21,22 +21,7 @@
 
   ![](../images/launchVSCode.png)
 
-  ## Step 2 - Connect Azure to your VS Code environment
-
-- Once VS Code launches, you need to log into Azure by selecting the Azure charm as shown below
-
-  ![](../images/azureCharm.png)
-
-- In the `integration accounts` pane you can then login using the following credentials:
-
-  - Username: labuser@igndemo.onmicrosft.com
-  - Password: L@b4Ign!te!
-
-- Once logged in, return to the explorer view by selecting the explorer charm
-
-  ![](../images/explorerCharm.png)
-
-  ## Step 3 - Setup your directory 
+  ## Step 2 - Setup your directory 
 
 - You are now ready to scaffold out a basic solidity project. From VS Code menu select, `view, command palette` and in the drop down type `azure blockchain:` and select `New Solidity Project` 
 
@@ -73,7 +58,7 @@
   }
   ```
 
-  ## Step 4: Download and integrate your OSS ERC20 token
+  ## Step 3: Download and integrate your OSS ERC20 token
 
 - Now that you have a basic project and directory structure, you need to download the ERC-20 token from OpenZeppelin
 
